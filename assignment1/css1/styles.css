@@ -17,13 +17,28 @@ img {
 	background-color: #f2f2f2;
 }
 
-.row {
+.row::after {
 	clear: both;
 	display: table;
+	overflow: auto;
 }
 
 .column {
   float: left;
   width: 33.33%;
   padding: 10px;
+}
+
+.p1 {
+	background: white;
+	font-family: Helvetica;
+	text-align: center;
+	color: #0d0d0d;
+}
+
+.p2 {
+	background: white;
+	font-family: helvetica;
+	text-align: center;
+	color: #262626;
 }
