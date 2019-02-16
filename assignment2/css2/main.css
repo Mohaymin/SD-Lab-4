@@ -20,18 +20,46 @@
 	width: 100%;
 }
 
-.featuredservices {
-	border: 1px solid #000000;
+.featuredcontainer {
+	background: #f2f2f2;
+	text-align: center;
+	padding-bottom: 70px;
 }
-.featuredservices img {
+.featuredtitle {
+	padding: 55px;
+}
+.featuredtitle h1 {
+	font-weight: normal;
+}
+
+.rounded img {
 	border-radius: 50%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 30px;
 }
-.featuredservices h4 {
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.beforefooter {
+	background-image: url("images2/ddg-bg.jpg");
+	height: 200px;
+}
+
+.footer {
+	background: black;
+	color: white;
+	font-size: 20px;
 	text-align: center;
 }
-.featuredservices p {
-	text-align: center;
+
+.f-h-t {
+	margin-left: 150px ;
+	margin-top:50px        
 }
