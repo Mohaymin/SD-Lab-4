@@ -13,13 +13,17 @@
 </head>
 <body>
 	<?php
+	# save the form data in csv file
 	$myfile = fopen("data.csv", "a+");
+	fputcsv($myfile, $_POST);
+	/*
 	foreach ($_POST as $key) {
-			# code...
 		fputcsv($myfile, explode(",", $key));
 	}
+	*/
 	fclose($myfile);
 	?>
+
 	<div class="container">
 		<table>
 			<tr>
@@ -28,6 +32,7 @@
 				<th>Password</th>
 			</tr>
 			<?php
+			# read from the csv file
 			$f = fopen("data.csv", "r");
 			while (($line = fgetcsv($f)) !== false) {
 				echo "<tr>\n";
